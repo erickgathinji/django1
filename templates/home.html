@@ -1,0 +1,29 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
+
+{% block content %}
+    <h2 class="text-center text-danger">Welcome to Django</h2>
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis, corporis dicta dolores in minima minus modi molestiae nesciunt nulla quasi quibusdam, quisquam quod quos ratione repudiandae sunt totam veniam.</span><span>Accusantium, alias architecto aut beatae dolore ducimus eum eveniet explicabo laudantium maxime officiis pariatur possimus quia quod similique vel voluptatum! Autem laboriosam, natus odio odit quod rem repellat tempore ut?</span><span>Aliquam cumque doloremque ducimus, eligendi eveniet fugit iusto laborum laudantium maxime minus nam nostrum officia perspiciatis porro possimus quisquam ratione similique voluptatum. Assumenda aut dolor dolorem minima nulla? Necessitatibus, quia.</span>
+    </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 justify-content-center">
+                <img src="{% static 'images/linkedin.png' %}" alt="">
+            </div>
+            <div class="col-sm-4">
+                <img src="{% static 'images/twitter.png' %}" alt="">
+            </div>
+            <div class="col-sm-4">
+                <img src="{% static 'images/whatsapp.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
